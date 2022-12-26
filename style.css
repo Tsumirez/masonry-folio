@@ -55,29 +55,21 @@ div:hover::after {
 
 body {
     padding: 2rem .5rem;
-    /* background: url('./images/kasztan.JPG') 80% 3%/20% no-repeat; */
 }
 
 h1 {
-    /* color: #270; */
-    color: #631;
     -webkit-text-stroke: 1px #333;
+    color: #631;
     text-align: center;
-    font:italic 6vw 'Leafy','Srisakdi', serif;
-    font-size: calc(1.875rem + 3.5vw);
+    font:italic calc(1.875rem + 3.5vw) 'Leafy','Srisakdi', serif;
     text-shadow: 4px 4px 5px #333;
-
-}
-
-h1 i {
-    /* font-family: Caveat,serif; */
 }
 
 main {
-    column-count: 3;
-    column-width: 300px;
     font-size: 0;
+    columns: 300px 3;
     padding: 2rem 0;
+    max-width: 1920px;
 }
 
 img {
@@ -85,6 +77,8 @@ img {
 }
 
 main > div {
+    /* width is needed so image width relates to the div, allowing them to stretch past their natural size */
+    width: 96%;
     margin: .5rem .5rem;
     display: inline-block;
     position: relative;
@@ -130,9 +124,6 @@ footer {
         top:0;
         left:0;
         width: 100%;
-        position: absolute;
-        background-color: rgba(0,0,0, .1);
-        border-bottom: 1px solid #000;
         position: absolute;
         background-color: rgba(0,0,0, .6);
     }
