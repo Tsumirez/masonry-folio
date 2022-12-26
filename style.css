@@ -1,0 +1,143 @@
+/* RESPONSIVE GRID LAOUT */
+/*
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    gap: 2vw;
+    padding: 1.5vw;
+    display: grid;
+    max-width: 1980px;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: repeat( auto-fill, minmax(20%, max(20%,300px) ) );
+}
+
+div {
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+}
+
+div img {
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+}
+
+div::after {
+    content: 'text';
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #eee;
+    background-color: rgba(0,0,0, .9);
+    transition: opacity 1s;
+}
+
+div:hover::after {
+    opacity:0;
+} 
+
+*/
+
+/* Masonry layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem .5rem;
+    /* background: url('./images/kasztan.JPG') 80% 3%/20% no-repeat; */
+}
+
+h1 {
+    /* color: #270; */
+    color: #631;
+    -webkit-text-stroke: 1px #333;
+    text-align: center;
+    font:italic 6vw 'Leafy','Srisakdi', serif;
+    font-size: calc(1.875rem + 3.5vw);
+    text-shadow: 4px 4px 5px #333;
+
+}
+
+h1 i {
+    /* font-family: Caveat,serif; */
+}
+
+main {
+    column-count: 3;
+    column-width: 300px;
+    font-size: 0;
+    padding: 2rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+main > div {
+    margin: .5rem .5rem;
+    display: inline-block;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: .25rem .25rem .5rem #777;
+}
+
+main > div > h3 {
+    color:#eee;
+    text-align: center;
+    padding: .5rem 5%;
+    font: 1.5rem Caveat, Arial, sans-serif;
+    background-color: rgba(0,0,0, .9);
+    transition: opacity 1s;
+    border-bottom: 1px solid #000;
+}
+
+h3::before, h3::after {
+    content: '"';
+}
+
+.sold {
+    filter:saturate(0);
+}
+
+.sold h3::after {
+    content: '" (sprzedane)'
+}
+
+img::selection {
+    
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font: calc(1rem + .75vw) Caveat, serif;
+}
+
+@media(hover: hover) {
+
+    main > div > h3 {
+        top:0;
+        left:0;
+        width: 100%;
+        position: absolute;
+        background-color: rgba(0,0,0, .1);
+        border-bottom: 1px solid #000;
+        position: absolute;
+        background-color: rgba(0,0,0, .6);
+    }
+
+    div:hover > h3, div:active > h3 {
+        opacity: 0;
+    }
+}

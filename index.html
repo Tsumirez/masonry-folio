@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cinzel+Decorative:wght@400;700&family=Srisakdi:wght@400;700&family=Tangerine:wght@700&display=swap" rel="stylesheet">     <link rel="stylesheet" href="style.css">
+    <title>Akwarele - Gosia Smelcerz</title>
+</head>
+<body>
+    <header>
+        <h1>Gosia Smelcerz <i>Art</i></h1>
+    </header>
+    <main>
+        <div><h3>Waza</h3><img src="images/medium-kwiaty.webp" alt="kwiaty"></div>
+        <div><h3>Koń Podbiegunowy</h3><img src="images/medium-kon.webp" alt=""></div>
+        <div><h3>Budżetowy Dron</h3><img src="images/medium-rusałka.webp" alt=""></div>
+        <div><h3>Pracownik Amazona</h3><img src="images/medium-rogacz.webp" alt=""></div>
+        <div class="sold"><h3>Legalne zioło</h3><img src="images/medium-kwiaty2.webp" alt=""></div>
+
+        <div><h3>Żuk po naprawach</h3><img src="images/medium-żuk.webp" alt=""></div>
+        <div><h3>Waza (kopia bezpieczeństwa)</h3><img src="images/medium-kwiaty.webp" alt="kwiaty"></div>
+        <div><h3>Kasztan</h3><img src="images/medium-kasztan.webp" alt=""></div>
+        <div><h3>Więcej legalnego zioła</h3><img src="images/medium-kwiaty2.webp" alt=""></div>
+        <div><h3>Koń Podbiegunowy z filtrami</h3><img src="images/medium-kon2.webp" alt=""></div>
+
+    </main>
+
+    <footer>Copyright &copy; 2023 Małgorzata Smelcerz :: <a href="mailto:buryniak@interia.pl">mail</a> </footer>
+    <script>
+        let imagePanels = document.querySelectorAll("main > div");
+        imagePanels.forEach(panel => {
+            let title = window.getComputedStyle(panel, ':before');
+            title['content'] = "zed"
+        })
+    </script>
+</body>
+</html>
