@@ -1,51 +1,8 @@
-/* RESPONSIVE GRID LAOUT */
-/*
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'Leafy';
+    src: url('./fonts/Leafy-Regular.otf'),
+         url('./fonts/Leafy-Regular.ttf');
 }
-
-main {
-    gap: 2vw;
-    padding: 1.5vw;
-    display: grid;
-    max-width: 1980px;
-    justify-content: center;
-    align-items: start;
-    grid-template-columns: repeat( auto-fill, minmax(20%, max(20%,300px) ) );
-}
-
-div {
-    width: 100%;
-    position: relative;
-    border: 1px solid black;
-}
-
-div img {
-    width: 100%;
-    display: block;
-    border: 1px solid black;
-}
-
-div::after {
-    content: 'text';
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: #eee;
-    background-color: rgba(0,0,0, .9);
-    transition: opacity 1s;
-}
-
-div:hover::after {
-    opacity:0;
-} 
-
-*/
-
-/* Masonry layout */
 
 * {
     margin: 0;
